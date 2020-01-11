@@ -23,7 +23,7 @@ var chartGroup = svg.append("g")
   .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 
-d3.csv("/D3_data_journalism/data.csv").then(function(myData) {
+d3.csv("data.csv").then(function(myData) {
     
     // convert data to numbers
     myData.forEach(function(xdata) {
